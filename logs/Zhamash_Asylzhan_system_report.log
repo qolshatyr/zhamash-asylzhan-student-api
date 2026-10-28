@@ -1,0 +1,68 @@
+================ SYSTEM REPORT ================
+Student:      Asylzhan Zhamash
+Date & time:  2026-10-29 00:09:21
+Username:     Juddah
+OS:           Ubuntu 26.04.1 LTS
+Kernel:       7.0.0-38-generic
+
+---------------- CPU ----------------
+Architecture:                            x86_64
+CPU(s):                                  12
+Model name:                              11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+CPU(s) scaling MHz:                      64%
+
+---------------- Memory ----------------
+               total        used        free      shared  buff/cache   available
+Mem:            14Gi        11Gi       572Mi       1.2Gi       5.1Gi       3.8Gi
+Swap:          4.0Gi       2.2Gi       1.8Gi
+
+---------------- Disk usage ----------------
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.0G  4.0M  3.0G   1% /run
+/dev/nvme0n1p5  110G   53G   51G  51% /
+tmpfs           7.5G   70M  7.4G   1% /dev/shm
+efivarfs        192K  103K   85K  55% /sys/firmware/efi/efivars
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme0n1p1  196M   38M  159M  20% /boot/efi
+tmpfs           7.5G   94M  7.4G   2% /tmp
+tmpfs           1.5G  160K  1.5G   1% /run/user/1000
+
+---------------- Available disk space (/) ----------------
+Available: 51G of 110G (51% used)
+===============================================
+
+================ SYSTEM REPORT ================
+Student:      Asylzhan Zhamash
+Date & time:  2026-10-29 00:10:08
+Username:     Juddah
+OS:           Ubuntu 26.04.1 LTS
+Kernel:       7.0.0-38-generic
+
+---------------- CPU ----------------
+Architecture:                            x86_64
+CPU(s):                                  12
+Model name:                              11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz
+CPU(s) scaling MHz:                      62%
+
+---------------- Memory ----------------
+               total        used        free      shared  buff/cache   available
+Mem:            14Gi        11Gi       540Mi       1.2Gi       5.1Gi       3.8Gi
+Swap:          4.0Gi       2.2Gi       1.8Gi
+
+---------------- Disk usage ----------------
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.0G  4.0M  3.0G   1% /run
+/dev/nvme0n1p5  110G   53G   51G  51% /
+tmpfs           7.5G   82M  7.4G   2% /dev/shm
+efivarfs        192K  103K   85K  55% /sys/firmware/efi/efivars
+none            1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none            1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme0n1p1  196M   38M  159M  20% /boot/efi
+tmpfs           7.5G   95M  7.4G   2% /tmp
+tmpfs           1.5G  160K  1.5G   1% /run/user/1000
+
+---------------- Available disk space (/) ----------------
+Available: 51G of 110G (51% used)
+===============================================
+
