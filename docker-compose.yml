@@ -1,0 +1,44 @@
+name: zhamash-asylzhan-student-api
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: zhamash-asylzhan-db
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - zhamash-asylzhan-pgdata:/var/lib/postgresql/data
+    networks:
+      - zhamash-asylzhan-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  app:
+    build: .
+    image: zhamash-asylzhan-student-api:${APP_TAG:-v1.0-zhamash-asylzhan}
+    container_name: zhamash-asylzhan-app
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/${POSTGRES_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "8080:8080"
+    networks:
+      - zhamash-asylzhan-net
+    restart: unless-stopped
+
+volumes:
+  zhamash-asylzhan-pgdata:
+
+networks:
+  zhamash-asylzhan-net:
+    driver: bridge
