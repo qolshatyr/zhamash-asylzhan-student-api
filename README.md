@@ -14,3 +14,4 @@ Description: Spring Boot + PostgreSQL REST API for managing students (Asylzhan Z
 | POST | /api/students | Create student |
 | PUT | /api/students/{id} | Update student |
 | DELETE | /api/students/{id} | Delete student |
+- CI trigger test by Asylzhan Zhamash (2026-10-29)
