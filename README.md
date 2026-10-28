@@ -1,2 +1,15 @@
 Author: Asylzhan Zhamash
 Description: Spring Boot CRUD API for students
+## Changes by Asylzhan Zhamash
+- Implemented `PUT /api/students/{id}` — update student information.
+- Returns 404 with JSON error if the student does not exist.
+
+## Endpoints
+| Method | URL | Description |
+|---|---|---|
+| GET | /api/info | Student name and app version |
+| GET | /api/students | All students |
+| GET | /api/students/{id} | One student |
+| POST | /api/students | Create student |
+| PUT | /api/students/{id} | Update student |
+| DELETE | /api/students/{id} | Delete student |
