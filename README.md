@@ -1,5 +1,6 @@
 Author: Asylzhan Zhamash
-Description: Spring Boot + PostgreSQL CRUD service (main branch, Asylzhan Zhamash)
+Description: Spring Boot + PostgreSQL REST API for managing students (Asylzhan Zhamash)
+
 ## Changes by Asylzhan Zhamash
 - Implemented `PUT /api/students/{id}` — update student information.
 - Returns 404 with JSON error if the student does not exist.
